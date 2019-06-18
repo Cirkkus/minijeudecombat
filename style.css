@@ -4,7 +4,7 @@ body {
   
    background-size: 110%;
 }
-
+/** Message d'acceuil */ 
 .box {
  
    display: inline-block;
@@ -13,7 +13,7 @@ body {
    align-content: center;
    margin-top : 2%;
 }
-
+/* Cadre des personnages */
 .character {
    display: flex;
    justify-content: center;
@@ -58,6 +58,7 @@ body {
    background-repeat: round;
 }
 
+/* Choix du personnage */
 .pickCharacter {
 
    display: flex;
