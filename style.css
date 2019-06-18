@@ -4,8 +4,53 @@ body {
 }
 
 .box {
-   border-radius : 2px;
+ 
    border : solid green;
    display : inline-block;
+   width: 50%;
+   align-items: center;
+}
+
+.personnages {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+}
+
+.perso1 {
+
+   width: 150px;
+   height: 150px;
+   background-repeat: no-repeat;
+   background-image: url(img/nova.png);
+   background-repeat: round;
+}
+
+.perso2 {
+
+
+   width: 150px;
+   height: 150px;
+   background-image: url(img/Zagara.png);
+   background-repeat: round;
+}
+
+.perso3 {
+
+   width: 150px;
+   height: 150px;
+   background-image: url(img/background.jpg);
+   background-repeat: round;
    
 }
+
+.perso4 {
+
+   width: 150px;
+   height: 150px;
+   background-image: url(img/Alarak.png);
+   background-repeat: round;
+}
+
