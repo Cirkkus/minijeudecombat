@@ -1,25 +1,27 @@
 body {
    background-image : url("img/background.jpg");
    text-align : center;
+   
 }
 
 .box {
  
-   border : solid green;
-   display : inline-block;
-   width: 50%;
+   display: inline-block;
+   justify-content: center;
    align-items: center;
+   align-content: center;
+   margin-top : 10%;
 }
 
-.personnages {
+.character {
    display: flex;
    justify-content: center;
    align-items: center;
    align-content: center;
-
+   
 }
 
-.perso1 {
+.character1 {
 
    width: 150px;
    height: 150px;
@@ -28,7 +30,7 @@ body {
    background-repeat: round;
 }
 
-.perso2 {
+.character2 {
 
 
    width: 150px;
@@ -37,7 +39,7 @@ body {
    background-repeat: round;
 }
 
-.perso3 {
+.character3 {
 
    width: 150px;
    height: 150px;
@@ -46,7 +48,7 @@ body {
    
 }
 
-.perso4 {
+.character4 {
 
    width: 150px;
    height: 150px;
@@ -54,3 +56,41 @@ body {
    background-repeat: round;
 }
 
+.pickCharacter {
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   
+}
+
+.pickCharacter1 {
+
+   width: 150px;
+   height: 150px;
+   
+}
+
+.pickCharacter2 {
+
+
+   width: 150px;
+   height: 150px;
+  
+}
+
+.pickCharacter3 {
+
+   width: 150px;
+   height: 150px;
+   
+   
+}
+
+.pickCharacter4 {
+
+   width: 150px;
+   height: 150px;
+  
+}
