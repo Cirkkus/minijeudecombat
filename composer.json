@@ -1,0 +1,12 @@
+{
+    "name": "alexc/minijeudecombat",
+    "require": {
+        "twbs/bootstrap": "^4.3"
+    },
+    "authors": [
+        {
+            "name": "Alex Chaval",
+            "email": "alex.chaval@laposte.net"
+        }
+    ]
+}
