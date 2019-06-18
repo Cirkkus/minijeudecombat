@@ -1,7 +1,8 @@
 body {
    background-image : url("img/background.jpg");
    text-align : center;
-   
+  
+   background-size: 110%;
 }
 
 .box {
@@ -10,7 +11,7 @@ body {
    justify-content: center;
    align-items: center;
    align-content: center;
-   margin-top : 10%;
+   margin-top : 2%;
 }
 
 .character {
@@ -23,36 +24,36 @@ body {
 
 .character1 {
 
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
    background-repeat: no-repeat;
-   background-image: url(img/nova.png);
+   background-image: url(img/zeratul.png);
    background-repeat: round;
 }
 
 .character2 {
 
 
-   width: 150px;
-   height: 150px;
-   background-image: url(img/Zagara.png);
+   width: 250px;
+   height: 250px;
+   background-image: url(img/grisetete.png);
    background-repeat: round;
 }
 
 .character3 {
 
-   width: 150px;
-   height: 150px;
-   background-image: url(img/background.jpg);
+   width: 250px;
+   height: 250px;
+   background-image: url(img/valyrya.png);
    background-repeat: round;
    
 }
 
 .character4 {
 
-   width: 150px;
-   height: 150px;
-   background-image: url(img/Alarak.png);
+   width: 250px;
+   height: 250px;
+   background-image: url(img/kaelthas.png);
    background-repeat: round;
 }
 
@@ -62,35 +63,41 @@ body {
    justify-content: center;
    align-items: center;
    align-content: center;
+   margin-top : 1%;
    
 }
 
 .pickCharacter1 {
 
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
    
 }
 
 .pickCharacter2 {
 
 
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
   
 }
 
 .pickCharacter3 {
 
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
    
    
 }
 
 .pickCharacter4 {
 
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
   
+}
+
+
+h1 {
+   font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
