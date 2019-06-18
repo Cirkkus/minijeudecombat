@@ -1,0 +1,11 @@
+body {
+   background-image : url("img/background.jpg");
+   text-align : center;
+}
+
+.box {
+   border-radius : 2px;
+   border : solid green;
+   display : inline-block;
+   
+}
