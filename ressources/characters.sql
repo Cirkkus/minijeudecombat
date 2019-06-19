@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 19 juin 2019 à 18:56
+-- Généré le :  mer. 19 juin 2019 à 19:03
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -45,7 +45,7 @@ INSERT INTO `characters` (`id`, `name`, `life`, `strength`) VALUES
 (1, 'Zeratul', 100, 20),
 (2, 'Grisetête', 100, 20),
 (3, 'Valyria', 100, 20),
-(4, 'Kael\'thas', 100, 20);
+(4, 'Kaelthas', 100, 20);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
