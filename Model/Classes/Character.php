@@ -1,7 +1,8 @@
 <?php
 
-    class Personnage {
+    class Character {
 
+        private $id;
         private $name;
         private $life;
         private $strength;
