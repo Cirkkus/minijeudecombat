@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta characterset="utf8";>
-    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-   
-    <title> Fight Club </title>
-</head>
-<body>
+<?php require "View/Template/html_head.html"; ?>
+
 
     <div class="box"> 
         <h1> L'Arene d'Anzu </h1>
@@ -25,26 +17,26 @@
     <div class="pickCharacter">
         <div class="pickCharacter1"> 
             <form method="POST" action="fight.html"> 
-                <input class="btn btn-outline-primary" type="submit" value="Zeratul">
+                <input type="hidden" name="id">
+                <input class="btn btn-outline-primary" type="submit" value="Zeratul" name="Zeratul" >
             </form> 
         </div>                  
         <div class="pickCharacter2"> 
             <form method="POST" action="fight.html"> 
-                <input class="btn btn-outline-primary" type="submit" value="Grisetête"> 
+                <input class="btn btn-outline-primary" type="submit" value="Grisetête" name="Grisetête"> 
             </form> 
         </div>
         <div class="pickCharacter3">
             <form method="POST" action="fight.html"> 
-                <input class="btn btn-outline-primary" type="submit" value="Valyria">
+                <input class="btn btn-outline-primary" type="submit" value="Valyria" name="Valyria">
             </form>  
         </div>          
         <div class="pickCharacter4">
             <form method="POST" action="fight.html"> 
-                <input class="btn btn-outline-primary" type="submit" value="Kael&#145;Thas">
+                <input class="btn btn-outline-primary" type="submit" value="Kael&#145;Thas"name="Kael&#145;Thas">
             </form> 
         </div>
     </div>
     
 
-</body>
-</html>
+    <?php require "View/Template/html_end.html"; ?>
