@@ -1,0 +1,61 @@
+<?php require "src/View/Template/html_head.html";  ?>
+
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1>Les <?= $type_pluriel; ?></h1>
+        <p class="lead">
+          Voici les <?= $type_pluriel; ?> disponibles&nbsp;:
+        </p>
+        
+        <form action="?page=<?= $type; ?>-add" method="POST" class="text-right">
+          <button type="submit" name="btn_add" class="btn btn-success">
+            <span class="fas fa-plus"></span> Ajouter
+          </button>
+        </form>
+        
+        <table class="table table-hover table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Sexe</th>
+              <th scope="col">Age</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+  <?php foreach($rows as $character): ?>
+              <tr class="table-row" data-href="?page=<?= $type; ?>&id=<?= $character->id; ?>">
+                <td><?= $character->nom; ?></td>
+                <td><?= $character->sexe; ?></td>
+                <td><?= $character->age(); ?></td>
+                <th>
+                  <form action="?page=<?= $type; ?>-edit" method="POST">
+                    <input type="hidden" name="id" value="<?= $character->id; ?>">
+                    <button type="submit" name="btn_edit" class="btn btn-primary">
+                      <span class="fas fa-edit"></span> Editer
+                    </button>
+                  </form>
+                </th>
+                <th>
+                  <form action="?page=<?= $type; ?>-remove" method="POST">
+                    <input type="hidden" name="id" value="<?= $character->id; ?>">
+                    <button type="submit" name="btn_remove" class="btn btn-danger">
+                      <span class="fas fa-trash-alt"></span> Supprimer
+                    </button>
+                  </form>
+                </th>
+              </tr>
+<?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+
+    </main><!-- /.container -->
+
+
+
+
+    <?php require "src/View/Template/html_end.html";  ?>

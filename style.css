@@ -1,5 +1,5 @@
 body {
-   background-image : url(View/Template/img/background.jpg);
+   background-image : url(src/View/Template/img/background.jpg);
    text-align : center;
   
    background-size: 110%;
@@ -28,7 +28,7 @@ body {
    width: 250px;
    height: 250px;
    background-repeat: no-repeat;
-   background-image: url(View/Template/img/zeratul.png);
+   background-image: url(src/View/Template/img/zeratul.png);
    background-repeat: round;
 }
 
@@ -37,7 +37,7 @@ body {
 
    width: 250px;
    height: 250px;
-   background-image: url(View/Template/img/grisetete.png);
+   background-image: url(src/View/Template/img/grisetete.png);
    background-repeat: round;
 }
 
@@ -45,7 +45,7 @@ body {
 
    width: 250px;
    height: 250px;
-   background-image: url(View/Template/img/valyrya.png);
+   background-image: url(src/View/Template/img/valyrya.png);
    background-repeat: round;
    
 }
@@ -54,7 +54,7 @@ body {
 
    width: 250px;
    height: 250px;
-   background-image: url(View/Template/img/kaelthas.png);
+   background-image: url(src/View/Template/img/kaelthas.png);
    background-repeat: round;
 }
 

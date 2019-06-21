@@ -1,26 +1,72 @@
 <?php
 
+namespace MiniJeu\Model\Classes;
+use MiniJeu\Model\Dao\CharacterDao;
+use \InvalidArgumentException;
+
     class Character {
 
         private $id;
         private $name;
         private $life;
         private $strength;
-        private $exp;
         private $level;
       
 
-       
-
-        public function __construct(){
-            $this->$id = $id;
-            $this->name = $name;
-            $this->life = $life;
-            $this->strength = $strength;
-            $this->exp = $exp;
-            $this->level = $level;
-         
+     
+        public function __construct()
+        {
+            $nb = func_num_args();
+            switch ($nb)
+            {
+                case 0:
+                    $this->construct_0();
+                    break;
+                case 5:
+                    $id = func_get_arg(0);
+                    $name = func_get_arg(1);
+                    $life = func_get_arg(2);
+                    $strength = func_get_arg(3);
+                    $level= func_get_arg(4);
+                    $this->construct_5($id, $name, $life, $strength, $level);
+                    break;
+                default:
+                    throw new InvalidArgumentException("Invalid parameters number");
+                    break;
+            }
         }
+    
+        private function construct_0()
+        {
+            // valeurs par défaut
+            $this->id = null;
+            $this->name = "";
+            $this->life = 0;
+            $this->strength = 0;
+            $this->level = 0;
+        }
+    
+        private function construct_5($id, $name, $life, $strength, $level)
+        {
+            // valeurs fournies en paramètres
+            $this->id = $id;
+            $this->name = $name;
+            $this->life = $strength;
+            $this->strength = $naissance;
+            $this->level = $level;
+        }
+    
+        public function __toString()
+        {
+            return $this->name;
+        }
+    
+        public static function getAll()
+        {
+            $dao = new CharacterDao();
+            return $dao->getAll();
+        } 
+       
 
         public function getId(){
             return $this->$id;
@@ -76,13 +122,13 @@
             } 
         } 
 
-        public function setExp($exp){
+        public function setPx($px){
             $exp = (int) $exp;
             if ($exp >= 0 && $exp <= 100) {
                 $this->exp = $exp;
             } 
         } 
-        
+
         public function setLevel($level){
             $level = (int) $level;
             if ($level >= 0 && $level <= 50) {

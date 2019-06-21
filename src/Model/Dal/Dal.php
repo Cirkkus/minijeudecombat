@@ -1,10 +1,8 @@
 <?php
+namespace MiniJeu\Model\Dal;
 
 use \PDO;
 
-/**
- * Data Abstract Layer
- */
 abstract class Dal
 {
     private $driver = "mysql";
