@@ -27,7 +27,7 @@ class CharacterDao extends Dal
 
     public function insert($name, $life, $strength, $level)
     {
-        global $debugMode;
+      
 
         $query = "INSERT INTO `{$this->table}`
                   (`name`, `life`, `strength`, `level`)
@@ -36,30 +36,9 @@ class CharacterDao extends Dal
                   ";
 
         $this->Open();
-        $stmt = $this->dbh->prepare($query);
-
-        $stmt->bindParam(":name", $name, PDO::PARAM_STR);
-        $stmt->bindParam(":life", $life, PDO::PARAM_INT);
-        $stmt->bindParam(":strength", $strength, PDO::PARAM_INT);
-        $stmt->bindParam(":level", $level, PDO::PARAM_INT);
-
-        $nbRows = $stmt->execute();
-        if ($nbRows == 1)
-        {
-            $id = $this->dbh->lastInsertId();
-        }
-        else
-        {
-            $id = 0;
-            if ($debugMode)
-            {
-                echo '<div class="alert alert-danger" role="alert">' . "\n";
-                echo $stmt->errorInfo()[2];
-                echo '</div>' . "\n";
-            }
-        }
-        $this->Close();
-        return $id;
+        $query->execute();
+        return $query;
+       
     }
 
     /**

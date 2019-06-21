@@ -3,9 +3,10 @@ namespace MiniJeu;
 
 require "vendor/autoload.php";
 
-
+use \PDO;
 use MiniJeu\Model\Classes\Character;
 use MiniJeu\Controller\CharacterController;
+use MiniJeu\Model\Dao\CharacterDao;
 
 
 
@@ -33,6 +34,9 @@ switch ($page)
         var_dump($grisetete);
         break;
     case "Valyria";
+      $dao = new CharacterDao();
+      $dao->insert("Valyria", 100,100,100);
+      var_dump($dao);
         break;
     case "KaelThas";
         break;

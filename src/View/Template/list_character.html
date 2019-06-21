@@ -28,9 +28,9 @@
           <tbody>
   <?php foreach($rows as $character): ?>
               <tr class="table-row" data-href="?page=<?= $type; ?>&id=<?= $character->id; ?>">
-                <td><?= $character->nom; ?></td>
-                <td><?= $character->sexe; ?></td>
-                <td><?= $character->age(); ?></td>
+                <td><?= $character->name; ?></td>
+                <td><?= $character->life; ?></td>
+                <td><?= $character->strength; ?></td>
                 <th>
                   <form action="?page=<?= $type; ?>-edit" method="POST">
                     <input type="hidden" name="id" value="<?= $character->id; ?>">
